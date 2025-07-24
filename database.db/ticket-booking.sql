@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS ticket_booking;
+
+USE ticket_booking;
+
+CREATE TABLE IF NOT EXISTS bookings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    event VARCHAR(100) NOT NULL,
+    seats INT NOT NULL
+);
